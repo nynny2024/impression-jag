@@ -1,0 +1,111 @@
+/* 页面背景与整体布局 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 容器样式 */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 标题样式 */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* 提示文本 */
+h2 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* 输入框样式 */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+}
+
+/* 聚焦效果 */
+input[type="text"]:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* 按钮样式 */
+button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 按钮 hover 效果 */
+button:hover {
+    background-color: #45a049;
+}
+
+/* 留言标签列表 */
+.impression-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* 留言标签样式 */
+.tag {
+    background-color: #f0f0f0;
+    margin: 5px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #555;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+
+/* 标签 hover 效果 */
+.tag:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-5px);
+}
+
+/* 提示文字 */
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}

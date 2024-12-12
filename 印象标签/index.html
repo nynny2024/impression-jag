@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>匿名留言板</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>匿名留言板</h1>
+        <h2>欢迎留言，留下你的印象</h2>
+        
+        <!-- 用户设置匿名名称 -->
+        <label for="nickname">请输入你的匿名名称：</label>
+        <input type="text" id="nickname" placeholder="例如：旅行者、学生、无名氏" maxlength="20" />
+
+        <!-- 留言输入框 -->
+        <textarea id="impression" placeholder="留下你的留言..." maxlength="200"></textarea>
+
+        <!-- 提交按钮 -->
+        <button id="submitBtn">提交留言</button>
+
+        <!-- 显示留言标签 -->
+        <div class="impression-list" id="impressionList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
